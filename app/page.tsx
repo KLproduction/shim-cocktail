@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <main className="flex-center flex-col">
       <Hero />
-      <div className="min-h-dvh  w-full" />
     </main>
   );
 }
