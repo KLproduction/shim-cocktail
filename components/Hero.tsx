@@ -134,9 +134,9 @@ export default function Hero() {
       </section>
 
       {/* 這段提供「可捲動距離」 */}
-      <section ref={videoWrapRef} className="absolute inset-0 min-h-screen">
+      <section ref={videoWrapRef} className="absolute inset-0">
         {/* pin 的容器在 flow 裏面，穩定 */}
-        <div ref={videoPinRef} className="sticky top-0 h-screen w-full overflow-hidden">
+        <div ref={videoPinRef} className="sticky top-0 min-h-screen w-full overflow-hidden">
           <video
             ref={videoRef}
             src="/videos/output.mp4"
