@@ -288,7 +288,7 @@ body {
       @apply relative z-10 mb-20 grid grid-cols-2 gap-10 sm:mb-32 md:mx-auto md:max-w-6xl md:grid-cols-4 md:gap-20;
 
       button {
-        @apply hover:text-yellow hover:border-yellow font-modern-negra cursor-pointer border-b-1 pb-2 text-xl transition-colors md:text-3xl;
+        @apply hover:text-yellow hover:border-yellow font-modern-negra cursor-pointer pb-2 text-xl transition-colors md:text-3xl;
       }
     }
 

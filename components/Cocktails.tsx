@@ -25,6 +25,8 @@ const Cocktails = () => {
         x: 100,
         y: 200,
       });
+
+    return () => parallaxTimeline.kill();
   });
 
   return (

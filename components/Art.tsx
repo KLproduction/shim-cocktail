@@ -14,10 +14,9 @@ const Art = () => {
       scrollTrigger: {
         trigger: "#art",
         start,
-        end: "bottom center",
-        scrub: 1.5,
+        end: "bottom 20%",
+        scrub: 3.5,
         pin: true,
-        markers: true,
       },
     });
 
@@ -31,6 +30,8 @@ const Art = () => {
         ease: "power1.inOut ",
       })
       .to("#masked-content", { opacity: 1, duration: 1, ease: "power1.inOut" });
+
+    return () => maskTimeline.kill();
   });
 
   return (
@@ -68,7 +69,7 @@ const Art = () => {
 
         <div className="masked-container">
           <h2 className="will-fade">Sip-Worthy Perfection</h2>
-          <div id="masked-content">
+          <div id="masked-content" className="w-full">
             <h3>Made with Craft, Poured with Passion</h3>
             <p>This isn’t just a drink. It’s a carefully crafted moment made just for you.</p>
           </div>
