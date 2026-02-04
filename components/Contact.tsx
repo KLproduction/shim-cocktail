@@ -14,7 +14,6 @@ const Contact = () => {
       scrollTrigger: {
         trigger: "#contact",
         start: "top center",
-        markers: true,
       },
       ease: "power1.inOut",
     });
